@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label Transfer: Not all bicycle bounding boxes are labeled in the same way
+title: Label Transfer - Not all bicycle bounding boxes are labeled in the same way
 date: 2024-03-13 21:00:00
 description: We formulate "Label transfer", a problem that exists in nearly every object detection dataset including real-world and synthetic ones.
 tags: domain-adaptation data-centric object-detection

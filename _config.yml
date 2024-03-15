@@ -50,7 +50,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -285,8 +285,10 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+#display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
+display_tags: ["data-centric"]
+#display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_categories: ["conference-paper"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -294,7 +296,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Liao]
-  first_name: [Yuan-Hong Liao]
+  first_name: [Yuan-Hong]
 
   style: apa
   locale: en
