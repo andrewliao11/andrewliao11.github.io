@@ -224,7 +224,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _posts_examples/
   - _pages/profiles.md
   - _pages/projects.md
   - _pages/repositories.md
