@@ -67,7 +67,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: anadrewliao11
+github_username: andrewliao11
 gitlab_username: # your GitLab user name
 x_username: andrewliao11
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
@@ -225,6 +225,7 @@ exclude:
   - readme_preview/
   - vendor
   - _pages/blog.md
+  - _pages/profiles.md
   - _pages/projects.md
   - _pages/repositories.md
   - _pages/teaching.md

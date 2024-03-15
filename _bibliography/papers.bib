@@ -9,6 +9,10 @@
   booktitle={The Twelfth International Conference on Learning Representations},
   year={2024},
   url={https://openreview.net/forum?id=ChHx5ORqF0}, 
+  abstract={In object detection, varying annotation protocols across datasets can result in annotation mismatches, leading to inconsistent class labels and bounding regions. Addressing these mismatches typically involves manually identifying common trends and fixing the corresponding bounding boxes and class labels. To alleviate this laborious process, we introduce the label transfer problem in object detection. Here, the goal is to transfer bounding boxes from one or more source datasets to match the annotation style of a target dataset. We propose a data-centric approach, Label-Guided Pseudo-Labeling (LGPL), that improves downstream detectors in a manner agnostic to the detector learning algorithms and model architectures. Validating across four object detection scenarios, defined over seven different datasets and three different architectures, we show that transferring labels for a target task via LGPL consistently improves the downstream detection in every setting, on average by  mAP and 2.65 AP. Most importantly, we find that when training with multiple labeled datasets, carefully addressing annotation mismatches with LGPL alone can improve downstream object detection better than off-the-shelf supervised domain adaptation techniques that align instance features.}, 
+  pdf={https://openreview.net/pdf?id=ChHx5ORqF0}, 
+  website={}, 
+  code={}, 
   selected={true}
 }
 @article{prabhu2023bridging,
@@ -17,24 +21,25 @@
   journal={Transactions on Machine Learning Research},
   issn={2835-8856},
   year={2023},
+  abstract={Sim2Real domain adaptation (DA) research focuses on the constrained setting of adapting from a labeled synthetic source domain to an unlabeled or sparsely labeled real target domain. However, for high-stakes applications (e.g. autonomous driving), it is common to have a modest amount of human-labeled real data in addition to plentiful auto-labeled source data (e.g. from a driving simulator). 
+
+  We study this setting of supervised sim2real DA applied to 2D object detection. We propose Domain Translation via Conditional Alignment and Reweighting (CARE) a novel algorithm that systematically exploits target labels to explicitly close the sim2real appearance and content gaps. We present an analytical justification of our algorithm and demonstrate strong gains over competing methods on standard benchmarks.
+  }, 
   url={https://openreview.net/forum?id=lAQQx7hlku},
+  pdf={https://openreview.net/pdf?id=lAQQx7hlku}, 
   note={}
 }
-@inproceedings{pal2021emergent,
-  title={Emergent Road Rules In Multi-Agent Driving Environments},
-  author={Avik Pal and Jonah Philion and Yuan-Hong Liao and Sanja Fidler},
-  booktitle={International Conference on Learning Representations},
-  year={2021},
-  url={https://openreview.net/forum?id=d8Q1mt2Ghw}
-}
-
 @InProceedings{Liao_2021_CVPR,
     author    = {Liao, Yuan-Hong and Kar, Amlan and Fidler, Sanja},
     title     = {Towards Good Practices for Efficiently Annotating Large-Scale Image Classification Datasets},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
     year      = {2021},
-    pages     = {4350-4359}
+    pages     = {4350-4359}, 
+    abstract={Data is the engine of modern computer vision, which necessitates collecting large-scale datasets. This is expen- sive, and guaranteeing the quality of the labels is a ma- jor challenge. In this paper, we investigate efficient anno- tation strategies for collecting multi-class classification la- bels for a large collection of images. While methods that ex- ploit learnt models for labeling exist, a surprisingly preva- lent approach is to query humans for a fixed number of labels per datum and aggregate them, which is expensive. Building on prior work on online joint probabilistic mod- eling of human annotations and machine-generated beliefs, we propose modifications and best practices aimed at min- imizing human labeling effort. Specifically, we make use of advances in self-supervised learning, view annotation as a semi-supervised learning problem, identify and mitigate pitfalls and ablate several key design choices to propose ef- fective guidelines for labeling. Our analysis is done in a more realistic simulation that involves querying human la- belers, which uncovers issues with evaluation using exist- ing worker simulation methods. Simulated experiments on a 125k image subset of the ImageNet100 show that it can be annotated to 80% top-1 accuracy with 0.35 annotations per image on average, a 2.7x and 6.7x improvement over prior work and manual annotation, respectively.}, 
+    pdf={https://openaccess.thecvf.com/content/CVPR2021/papers/Liao_Towards_Good_Practices_for_Efficiently_Annotating_Large-Scale_Image_Classification_Datasets_CVPR_2021_paper.pdf}, 
+    website={}, 
+    code={https://github.com/fidler-lab/efficient-annotation-cookbook}, 
     selected={true}
 }
 @inproceedings{pal2021emergent,
@@ -42,6 +47,10 @@
   author={Avik Pal and Jonah Philion and Yuan-Hong Liao and Sanja Fidler},
   booktitle={International Conference on Learning Representations},
   year={2021},
+  abstract={For autonomous vehicles to safely share the road with human drivers, autonomous vehicles must abide by specific "road rules" that human drivers have agreed to follow. "Road rules" include rules that drivers are required to follow by law such as the requirement that vehicles stop at red lights as well as more subtle social rules such as the implicit designation of fast lanes on the highway. In this paper, we provide empirical evidence that suggests that instead of hard-coding road rules into self-driving algorithms a scalable alternative may be to design multi-agent environments in which road rules emerge as optimal solutions to the problem of maximizing traffic flow. We analyze what ingredients in driving environments cause the emergence of these road rules and find that two crucial factors are noisy perception and agents' spatial density. We provide qualitative and quantitative evidence of the emergence of seven social driving behaviors, ranging from obeying traffic signals to following lanes, all of which emerge from training agents to drive quickly to destinations without colliding. Our results add empirical support for the social road rules that countries worldwide have agreed on for safe, efficient driving.}, 
+  code={https://github.com/fidler-lab/social-driving}, 
+  website={https://fidler-lab.github.io/social-driving/}, 
+  pdf={https://openreview.net/pdf?id=d8Q1mt2Ghw}, 
   url={https://openreview.net/forum?id=d8Q1mt2Ghw}
 }
 @inproceedings{puig2021watchandhelp,
@@ -49,6 +58,8 @@
   author={Xavier Puig and Tianmin Shu and Shuang Li and Zilin Wang and Yuan-Hong Liao and Joshua B. Tenenbaum and Sanja Fidler and Antonio Torralba},
   booktitle={International Conference on Learning Representations},
   year={2021},
+  abstract={In this paper, we introduce Watch-And-Help (WAH), a challenge for testing social intelligence in agents. In WAH, an AI agent needs to help a human-like agent perform a complex household task efficiently. To succeed, the AI agent needs to i) understand the underlying goal of the task by watching a single demonstration of the human-like agent performing the same task (social perception), and ii) coordinate with the human-like agent to solve the task in an unseen environment as fast as possible (human-AI collaboration). For this challenge, we build VirtualHome-Social, a multi-agent household environment, and provide a benchmark including both planning and learning based baselines. We evaluate the performance of AI agents with the human-like agent as well as and with real humans using objective metrics and subjective user ratings. Experimental results demonstrate that our challenge and virtual environment enable a systematic evaluation on the important aspects of machine social intelligence at scale.}, 
+  pdf={https://openreview.net/pdf?id=w_7JMpGZRh0}, 
   url={https://openreview.net/forum?id=w_7JMpGZRh0}
 }
 
@@ -56,6 +67,8 @@
   author = {Liao, Yuan-Hong and Puig, Xavier and Boben, Marko and Torralba, Antonio and Fidler, Sanja},
   title = {Synthesizing Environment-Aware Activities via Activity Sketches},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  abstract={In order to learn to perform activities from demonstra- tions or descriptions, agents need to distill what the essence of the given activity is, and how it can be adapted to new environments. In this work, we address the problem of environment-aware program generation. Given a visual demonstration or a description of an activity, we gener- ate program sketches representing the essential instructions and propose a model to transform these into full programs representing the actions needed to perform the activity un- der the presented environmental constraints. To this end, we build upon VirtualHome to create a new dataset VirtualHome-Env, where we collect program sketches to represent activities and match programs with environments that can afford them. Furthermore, we construct a knowledge base to sample realistic environments and another knowledge base to seek out the programs under the sampled environments. Finally, we propose ResActGraph, a network that generates a program from a given sketch and an environment graph and tracks the changes in the environment induced by the program.}, 
+  pdf={https://openaccess.thecvf.com/content_CVPR_2019/papers/Liao_Synthesizing_Environment-Aware_Activities_via_Activity_Sketches_CVPR_2019_paper.pdf}, 
   month = {June},
   year = {2019}
 }
