@@ -125,7 +125,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Andrew's blog # blog_name will be displayed in your blog page
 blog_description: I learn, I share
-permalink: /blog/:year/:title/
+  #permalink: /blog/:year/:title/
+permalink: /blog/:title/
 
 # Pagination
 pagination:
