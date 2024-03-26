@@ -39,7 +39,7 @@ nav: false
   <link rel="stylesheet" href="/assets/external_pages/label_transfer/static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/external_pages/label_transfer/static/css/index.css">
-  <link rel="icon" href="assets/img/logo.jpg">
+  <link rel="icon" href="/assets/img/logo.jpg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="/assets/external_pages/label_transfer/static/js/fontawesome.all.min.js"></script>
