@@ -39,7 +39,7 @@ nav: false
   <link rel="stylesheet" href="/assets/external_pages/label_transfer/static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/external_pages/label_transfer/static/css/index.css">
-  <link rel="icon" href="/assets/external_pages/label_transfer/static/images/vlmaps_icon.svg">
+  <link rel="icon" href="/assets/img/logo.jpg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="/assets/external_pages/label_transfer/static/js/fontawesome.all.min.js"></script>
@@ -85,7 +85,7 @@ nav: false
               <span class="link-block"> <!-- todo -->
                 <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-github"></i>
+                    <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                 </a>
