@@ -13,7 +13,7 @@ nav: false
     content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?">
   <meta name="keywords" content="vision-language models, visual grounding, prompt engineering, feedback">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="V">
+  <meta property="og:title" content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?">
   <meta property="og:type" content="website">
   <meta property="og:site_name"
     content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?">
@@ -79,6 +79,15 @@ nav: false
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block"> <!-- todo -->
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-github"></i>
+                  </span>
+                  <span>Code</span>
                 </a>
               </span>
               <!-- Video Link. 

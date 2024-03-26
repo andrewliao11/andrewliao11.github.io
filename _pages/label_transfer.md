@@ -13,7 +13,7 @@ nav: false
     content="Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets">
   <meta name="keywords" content="labe transfer, data-centric, object detection, domain adaptation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="V">
+  <meta property="og:title" content="Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets">
   <meta property="og:type" content="website">
   <meta property="og:site_name"
     content="Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets">
