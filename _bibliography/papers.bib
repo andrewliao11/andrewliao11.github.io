@@ -2,19 +2,18 @@
 ---
 
 
-
 @inproceedings{liao2024translating,
-  title={Transferring Labels to Solve Annotation Mismatches Across Object Detection Datasets},
-  author={Yuan-Hong Liao and David Acuna and Rafid Mahmood and James Lucas and Viraj Uday Prabhu and Sanja Fidler},
-  booktitle={The Twelfth International Conference on Learning Representations},
-  year={2024},
-  url={https://openreview.net/forum?id=ChHx5ORqF0}, 
-  abstract={In object detection, varying annotation protocols across datasets can result in annotation mismatches, leading to inconsistent class labels and bounding regions. Addressing these mismatches typically involves manually identifying common trends and fixing the corresponding bounding boxes and class labels. To alleviate this laborious process, we introduce the label transfer problem in object detection. Here, the goal is to transfer bounding boxes from one or more source datasets to match the annotation style of a target dataset. We propose a data-centric approach, Label-Guided Pseudo-Labeling (LGPL), that improves downstream detectors in a manner agnostic to the detector learning algorithms and model architectures. Validating across four object detection scenarios, defined over seven different datasets and three different architectures, we show that transferring labels for a target task via LGPL consistently improves the downstream detection in every setting, on average by  mAP and 2.65 AP. Most importantly, we find that when training with multiple labeled datasets, carefully addressing annotation mismatches with LGPL alone can improve downstream object detection better than off-the-shelf supervised domain adaptation techniques that align instance features.}, 
-  pdf={https://openreview.net/pdf?id=ChHx5ORqF0}, 
-  website={}, 
-  code={}, 
-  selected={true}, 
-  preview={label_transfer.png}
+title={Translating Labels to Solve Annotation Mismatches Across Object Detection Datasets},
+author={Yuan-Hong Liao and David Acuna and Rafid Mahmood and James Lucas and Viraj Uday Prabhu and Sanja Fidler},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=ChHx5ORqF0}, 
+abstract={In object detection, varying annotation protocols across datasets can result in annotation mismatches, leading to inconsistent class labels and bounding regions. Addressing these mismatches typically involves manually identifying common trends and fixing the corresponding bounding boxes and class labels. To alleviate this laborious process, we introduce the label transfer problem in object detection. Here, the goal is to transfer bounding boxes from one or more source datasets to match the annotation style of a target dataset. We propose a data-centric approach, Label-Guided Pseudo-Labeling (LGPL), that improves downstream detectors in a manner agnostic to the detector learning algorithms and model architectures. Validating across four object detection scenarios, defined over seven different datasets and three different architectures, we show that transferring labels for a target task via LGPL consistently improves the downstream detection in every setting, on average by 1.88 mAP and 2.65 AP^{75}. Most importantly, we find that when training with multiple labeled datasets, carefully addressing annotation mismatches with LGPL alone can improve downstream object detection better than off-the-shelf supervised domain adaptation techniques that align instance features.}, 
+pdf={https://openreview.net/pdf?id=ChHx5ORqF0}, 
+website={}, 
+code={}, 
+selected={true}, 
+preview={label_transfer.png}
 }
 @article{prabhu2023bridging,
   title={Bridging the Sim2Real gap with {CARE}: Supervised Detection Adaptation with Conditional Alignment and Reweighting},
