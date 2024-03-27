@@ -110,12 +110,30 @@ nav: false
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+      <div class="columns is-vcentered interpolation-panel">
+        <div class="column  has-text-centered">
+          <video autoplay controls muted loop playsinline height="100%">
+            <source src="/assets/video/vlms_feedback/website_teaser_gif_noise_free_feedback.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Improve VLMs with oracle feedback.
+          </h2>
+        </div>
+        <div class="column  has-text-centered">
+          <video autoplay controls muted loop playsinline height="100%">
+            <source src="/assets/video/vlms_feedback/website_teaser_gif_vlm_feedback.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Improve VLMs with <i>self-generated</i> feedback.
+          </h2>
+        </div>
+      </div>
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="static/videos/PR2LAnimation.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         TODO: caption for the GIF
-      </h2>
+      </h2>  -->
     </div>
   </div>
 </section>
@@ -153,7 +171,7 @@ nav: false
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Do VLMs receive and give feedback?</h2>
-        We study this question by proposing four questions and systematically investigate how to approach it.
+        <p>We study this question by proposing four questions and systematically investigate how to approach it. </p>
         <div class="content has-text-justified has-text-centered">
           <h3 class="title is-4">Experimental findings</h3>
             <p> Briefly show the takeaway</p>
@@ -167,14 +185,15 @@ nav: false
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Towards Iterative Self-Generated Feedback</h2>
+        <h2 class="title is-3">Towards Iterative Feedback</h2>
         <div class="content has-text-justified has-text-centered">
-          <p> Briefly describe the four scenarios we have in the paper</p>
+          <img src="/assets/img/vlms_feedback/ade_quantative_res.png" />          
           <h3 class="title is-4">Self-generated feedback is useful when coupled with explicit verifier and visual prompts techniques</h3>
             <img src="" /> <!-- a condensed version of table 1 and 2 -->
             <p> What does this imply? Be brief and highlight with bold font</p>
           <h3 class="title is-4">Qualitative results</h3>
-            <img src="" /> <!-- show with lots of examples (side-by-side comparison) -->
+            <img src="/assets/img/vlms_feedback/llava_qualitative_res.jpg" />
+            <img src="/assets/img/vlms_feedback/vip_llava_qualitative_res.jpg" />
         </div>
       </div>
     </div>
