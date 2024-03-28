@@ -143,7 +143,7 @@ nav: false
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column">
-          <h2 class="title is-3">Give it a try! Provide your feedback our to VLM and see if it's doing well.</h2>
+          <h2 class="title is-3">Give it a try! Provide your feedback to our VLM and see if it's doing well.</h2>
           <div class="columns is-centered">
             <div class="column content">
               <p>Here, you can interact with <a href="https://huggingface.co/liuhaotian/llava-v1.5-13b">LLaVA-1.5 13b model</a> by providing binary feedback.</p>
