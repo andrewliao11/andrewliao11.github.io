@@ -27,7 +27,6 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
 .publication-title {
 }
 
@@ -110,6 +109,20 @@ body {
 .publication-body img {
 }
 
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
 .results-carousel {
   overflow: hidden;
 }
@@ -162,4 +175,3 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
-

@@ -110,33 +110,16 @@ nav: false
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="columns is-vcentered interpolation-panel">
-        <div class="column  has-text-centered">
-          <video autoplay controls muted loop playsinline height="100%">
-            <source src="/assets/video/vlms_feedback/website_teaser_gif_noise_free_feedback.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Improve VLMs with oracle feedback.
-          </h2>
-        </div>
-        <div class="column  has-text-centered">
-          <video autoplay controls muted loop playsinline height="100%">
-            <source src="/assets/video/vlms_feedback/website_teaser_gif_vlm_feedback.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Improve VLMs with <i>self-generated</i> feedback.
-          </h2>
-        </div>
-      </div>
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="static/videos/PR2LAnimation.mp4" type="video/mp4">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="/assets/video/vlms_feedback/website_teaser_gif_vlm_feedback.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        TODO: caption for the GIF
-      </h2>  -->
+        Can VLMs improve their responses by taking <i>self-generated</i> feedback?
+      </h2>
     </div>
   </div>
 </section>
+
 
 <section class="section" id="abstract">
   <div class="container is-max-desktop">
@@ -155,11 +138,20 @@ nav: false
 </section>
 
 
-<section class="section" id="semi_interactive_demo">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Select an image and provide binary feedback</h2>
+<section class="hero is-light is-small" id="semi_interactive_demo">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3">Give it a try! Provide your feedback our to VLM and see if it's doing well.</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>Here, you can interact with <a href="https://huggingface.co/liuhaotian/llava-v1.5-13b">LLaVA-1.5 13b model</a> by providing binary feedback.</p>
+              <img src="/assets/img/vlms_feedback/demo_placeholder.png" />
+              <p><small><sup>*</sup>All results are pre-generated.</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -170,36 +162,48 @@ nav: false
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Do VLMs receive and give feedback?</h2>
-        <p>We study this question by proposing four questions and systematically investigate how to approach it. </p>
-        <div class="content has-text-justified has-text-centered">
-          <h3 class="title is-4">Experimental findings</h3>
-            <p> Briefly show the takeaway</p>
+        <h2 class="title is-3">Feedback Dynamics in VLMs</h2>
+        <p>In this paper, we perform the first exploration of whether VLMs can improve their semantic grounding on zero-shot tasks by only "listening" to automated prompt-based feedback. This interaction requires no additional fine-tuning and can be achieved by API-based VLMs for the downstream applications. We summarize the contribution as follow:</p>
+        <div style="padding-left: 24px">
+          <ol>
+            <li><b>VLMs can listen to feedback to improve downstream visual grounding</b>: In a single-step setting with a noise-free binary signal, VLMs improve their semantic grounding performance by 4 to 12 accuracy points, and over multiple rounds, by over 15 points across five rounds. This shows the potential of feedback as a means of improving grounding performance in VLMs.</li>
+            <li><b>VLMs can be used as binary feedback providers</b>: Similar to the findings shown in the prior work (Huang et al., 2023), our experimental results show that VLMs cannot self-correct (yet). However, we find that this does not imply VLMs cannot self-evaluate (Kadavath et al., 2022). We show that VLMs can provide high-quality binary feedback through isolation or marking of objects.</li>
+            <li><b>VLMs benefit from automatic iterative feedback by improving semantic grounding accuracy up to nearly 5 accuracy points</b>: We formulate an iterative framework that improve semantic grounding in VLMs by combining VLM verification and VLM feedback listening. </li>
+          </ol>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
 <section class="section" id="experiment">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Towards Iterative Feedback</h2>
-        <div class="content has-text-justified has-text-centered">
-          <img src="/assets/img/vlms_feedback/ade_quantative_res.png" />          
-          <h3 class="title is-4">Self-generated feedback is useful when coupled with explicit verifier and visual prompts techniques</h3>
-            <img src="" /> <!-- a condensed version of table 1 and 2 -->
-            <p> What does this imply? Be brief and highlight with bold font</p>
-          <h3 class="title is-4">Qualitative results</h3>
-            <img src="/assets/img/vlms_feedback/llava_qualitative_res.jpg" />
-            <img src="/assets/img/vlms_feedback/vip_llava_qualitative_res.jpg" />
+        <h2 class="title is-3">Iterative Feedback Improves Semantic Grounding in VLMs</h2>
+        <div class="content">
+            We introduce an iterative loop of dialogue between a VLM agent and Verifier. At the first time step, the VLM agent obtain base predictions for every scene. We then prompt Verifiery (the same VLM) to generate a binary feedback for every prediction. In the next time step, we provide this binary feedback to the VLM agent and ask it to re-generate predictions. We repeat these steps until Verifier agrees with the predictions. 
+        </div>
+        <div class="container is-centered">
+          <video id="teaser" autoplay muted loop playsinline height="100%"><source src="/assets/video/vlms_feedback/website_framework_flow_gif.mp4" type="video/mp4">
+        </video>
+      </div>
+        <h3 class="title is-4">Quantitative Results</h3>
+        <div class="content">
+            We compare our approach, VLM binary verification, with intrinsic self-correction (Kim et al., 2023). We also compare with a noise-free version of our iterative approach, noise-free verification. The following table show the results on ADE20k<sup>*</sup><br><small><sup>*</sup>We use a subset of ADE20k validation images for evaluation.</small>
+          <img src="/assets/img/vlms_feedback/ade_quantative_res.png" margin-left="auto" margin-right="auto"/>
+          <p> We highlight the performance difference <i>w.r.t.</i> the performance of the base predictions and if the performances are below the performance of the base predictions, we use <font color="#ff0000">red-colored font.</font> </p>
+        </div>
+        <h3 class="title is-4">Qualitative Results</h3>
+        <div class="content">
+          <img src="/assets/img/vlms_feedback/additional_qualitative_res_gpt4v_1.jpg" margin-left="auto" margin-right="auto"/>
+          <p> Here, we show an example using GPT-4V & SoM (Jianwei Yang et al., 2023) as the VLM. GPT-4V is able to identify what objects are in the image, but struggles to identify the mapping between numeric object IDs with objects. With self-generated feedback (from center to left), GPT-4V successfully corrects its own predictions. For more qualitative results, please refere to our paper. </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-  
 
 <section class="section" id="BibTeX">
   <!-- Citation -->

@@ -38,6 +38,32 @@ $(document).ready(function() {
 			autoplaySpeed: 3000,
     }
 
+    /*
+    let currentVideoIndex = 0;
+    const videos = $('.results-carousel .item');
+    videos.hide(); // Hide all videos initially
+    $(videos[currentVideoIndex]).show(); // Show the first video
+
+    // Function to navigate to the next video
+    function nextVideo() {
+        $(videos[currentVideoIndex]).hide();
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        $(videos[currentVideoIndex]).show();
+    }
+
+    // Function to navigate to the previous video
+    function prevVideo() {
+        $(videos[currentVideoIndex]).hide();
+        currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+        $(videos[currentVideoIndex]).show();
+    }
+
+    // Example usage with next and prev buttons
+    $('.next').click(nextVideo);
+    $('.prev').click(prevVideo);
+    */
+
+    
 		// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
 
@@ -57,6 +83,10 @@ $(document).ready(function() {
     		console.log(state);
     	});
     }
+    
+
+
+
 
     /*var player = document.getElementById('interpolation-video');
     player.addEventListener('loadedmetadata', function() {
