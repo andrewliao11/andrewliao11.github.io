@@ -129,7 +129,7 @@ nav: false
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Enhancing semantic grounding abilities in Vision-Language Models (VLMs) often involves collecting domain-specific training data, refining the network architectures, or modi- fying the training recipes. In this work, we venture into an orthogonal direction and explore whether VLMs can improve their semantic grounding by "listening" to feedback, without requiring in-domain data, fine-tuning, or modifications to the network architectures. We systematically analyze this hypothesis using a feedback mechanism composed of a binary signal. We find that if prompted appropriately, VLMs can listen to feedback both in a single step and iteratively, showcasing the potential of feedback as an alternative technique to improve grounding in internet-scale VLMs. Furthermore, VLMs, like LLMs, struggle to self-correct errors out-of-the-box. However, we find that this issue can be mitigated via a binary verification mechanism. Finally, we explore the potential and limitations of amalgamating these findings and applying them iteratively to automatically enhance VLMs' grounding performance, showing grounding accuracy consistently improves using automated feedback across all models in all settings investigated. Overall, our iterative framework improves semantic grounding in VLMs by more than 15 accuracy points under noise-free feedback and up to 5 accuracy points under a simple automated binary verification mechanism.
+            Enhancing semantic grounding abilities in Vision-Language Models (VLMs) often involves collecting domain-specific training data, refining the network architectures, or modi- fying the training recipes. In this work, we venture into an orthogonal direction and explore whether VLMs can improve their semantic grounding by "listening" to feedback &#128066;, without requiring in-domain data, fine-tuning, or modifications to the network architectures. We systematically analyze this hypothesis using a feedback mechanism composed of a binary signal. We find that if prompted appropriately, VLMs can listen to feedback both in a single step and iteratively, showcasing the potential of feedback as an alternative technique to improve grounding in internet-scale VLMs. Furthermore, VLMs, like LLMs, struggle to self-correct errors out-of-the-box. However, we find that this issue can be mitigated via a binary verification mechanism. Finally, we explore the potential and limitations of amalgamating these findings and applying them iteratively to automatically enhance VLMs' grounding performance, showing grounding accuracy consistently improves using automated feedback across all models in all settings investigated. Overall, our iterative framework improves semantic grounding in VLMs by more than 15 accuracy points under noise-free feedback and up to 5 accuracy points under a simple automated binary verification mechanism &#128640;.
           </p>
         </div>
       </div>
@@ -162,14 +162,27 @@ nav: false
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Feedback Dynamics in VLMs</h2>
-        <p>In this paper, we perform the first exploration of whether VLMs can improve their semantic grounding on zero-shot tasks by only "listening" to automated prompt-based feedback. This interaction requires no additional fine-tuning and can be achieved by API-based VLMs for the downstream applications. We summarize the contribution as follow:</p>
-        <div style="padding-left: 24px">
-          <ol>
-            <li><b>VLMs can listen to feedback to improve downstream visual grounding</b>: In a single-step setting with a noise-free binary signal, VLMs improve their semantic grounding performance by 4 to 12 accuracy points, and over multiple rounds, by over 15 points across five rounds. This shows the potential of feedback as a means of improving grounding performance in VLMs.</li>
-            <li><b>VLMs can be used as binary feedback providers</b>: Similar to the findings shown in the prior work (Huang et al., 2023), our experimental results show that VLMs cannot self-correct (yet). However, we find that this does not imply VLMs cannot self-evaluate (Kadavath et al., 2022). We show that VLMs can provide high-quality binary feedback through isolation or marking of objects.</li>
-            <li><b>VLMs benefit from automatic iterative feedback by improving semantic grounding accuracy up to nearly 5 accuracy points</b>: We formulate an iterative framework that improve semantic grounding in VLMs by combining VLM verification and VLM feedback listening. </li>
-          </ol>
+        <h2 class="title is-3">Use Prompt-based Feedback to Improve VLMs</h2>
+        <div class="content">
+            <p>Despite VLMs’ strong visual-language understanding abilities, <i>fine-grained visual grounding</i> remains a challenge. This work investigates how <font color="#ff0000">prompt-based feedback</font> can improve semantic grounding in VLMs. This enjoys two main advantages: 
+            <div style="padding-left: 36px">
+                <ol>
+                    <li>&#128293; Requiring no additional training</li>
+                    <li>&#128293; Unleashing services relying on API-based VLMs for their downstream applications</li>
+                </ol>
+            </div>
+            </p>
+        </div>
+        <div class="content">
+            <h3 class="title is-4">Feedback Dynamics in VLMs</h3>
+            <p>We first study the foundamental questions (1) Can VLMs <font color="#ff0000">listen</font> to prompt-based feedback? and (2) Can VLMs <font color="#ff0000">give</font> prompt-based feedback? We study these questions in the context of semantic grounding and investigate three open-sourced VLMs (LLaVA-1.5, ViP-LLaVA, and CogVLM) and one proprietary VLM (GPT-4V & SoM). Here, we summarize our findings and contributions</p>
+            <div style="padding-left: 24px">
+            <ol>
+                <li><b>&#128066; VLMs can listen to feedback to improve downstream semantic grounding</b>: Our study shows that VLMs improve &#128640; 4 to 12 accuracy points when recieving orale binary feedback that indicates the correctness of the prediction. When prompted over multiple rounds, VLMs improves by over 15 accuracy points &#128640;. This shows the potential of feedback as a means of improving grounding performance in VLMs.</li>
+                <li><b>&#128483; VLMs can give binary feedback</b>: Similar to the findings in LLMs, we find that VLMs can perform <i>self-evaluation</i> (Kadavath et al., 2022). We show that VLMs can provide high-quality binary feedback through different visual prompts, <i>i.e.</i>, isolation or marking of objects.</li>
+                <li><b>&#129302; Combining 1 and 2, VLMs benefit from automatic iterative feedback</b>: We formulate an iterative framework that improve semantic grounding in VLMs up to nearly 5 accuracy points.</li>
+            </ol>
+            </div>
         </div>
       </div>
     </div>
@@ -189,13 +202,13 @@ nav: false
           <video id="teaser" autoplay muted loop playsinline height="100%"><source src="/assets/video/vlms_feedback/website_framework_flow_gif.mp4" type="video/mp4">
         </video>
       </div>
-        <h3 class="title is-4">Quantitative Results</h3>
+        <h3 class="title is-4">&#128290; Quantitative Results</h3>
         <div class="content">
-            We compare our approach, VLM binary verification, with intrinsic self-correction (Kim et al., 2023). We also compare with a noise-free version of our iterative approach, noise-free verification. The following table show the results on ADE20k<sup>*</sup><br><small><sup>*</sup>We use a subset of ADE20k validation images for evaluation.</small>
+            We compare our approach, <i>VLM binary verification</i>, with <i>intrinsic self-correction</i> (Kim et al., 2023). We also compare with a noise-free version of our iterative approach, noise-free verification. The following table show the results on ADE20k<sup>*</sup>:<br><small><sup>*</sup>We use a subset of ADE20k validation images for evaluation.</small>
           <img src="/assets/img/vlms_feedback/ade_quantative_res.png" margin-left="auto" margin-right="auto"/>
           <p> We highlight the performance difference <i>w.r.t.</i> the performance of the base predictions and if the performances are below the performance of the base predictions, we use <font color="#ff0000">red-colored font.</font> </p>
         </div>
-        <h3 class="title is-4">Qualitative Results</h3>
+        <h3 class="title is-4">&#127912; Qualitative Results</h3>
         <div class="content">
           <img src="/assets/img/vlms_feedback/additional_qualitative_res_gpt4v_1.jpg" margin-left="auto" margin-right="auto"/>
           <p> Here, we show an example using GPT-4V & SoM (Jianwei Yang et al., 2023) as the VLM. GPT-4V is able to identify what objects are in the image, but struggles to identify the mapping between numeric object IDs with objects. With self-generated feedback (from center to left), GPT-4V successfully corrects its own predictions. For more qualitative results, please refere to our paper. </p>
