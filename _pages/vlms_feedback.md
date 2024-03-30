@@ -111,7 +111,7 @@ nav: false
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="/assets/video/vlms_feedback/website_teaser_gif_vlm_feedback.mp4" type="video/mp4">
+        <source src="/assets/video/vlms_feedback/cropped_website_teaser_gif_vlm_feedback.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         Can VLMs improve their responses by taking <i>self-generated</i> feedback?
