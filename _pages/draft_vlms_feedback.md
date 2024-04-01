@@ -1,7 +1,7 @@
 ---
 layout: none
 title: vlms_feedback
-permalink: /vlms_feedback/
+permalink: /draft_vlms_feedback/
 nav: false
 
 ---
