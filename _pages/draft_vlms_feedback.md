@@ -139,6 +139,26 @@ nav: false
 </section>
 
 
+<section class="hero is-light is-small" id="semi_interactive_demo">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3">Give it a try! Provide your feedback to our VLM and see if it's doing well.</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>Here, you can interact with <a href="https://huggingface.co/liuhaotian/llava-v1.5-13b">LLaVA-1.5 13b model</a> by providing binary feedback.</p>
+              <img src="/assets/img/vlms_feedback/demo_placeholder.png" />
+              <p><small><sup>*</sup>All results are pre-generated.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section" id="feedback_dynamics">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
