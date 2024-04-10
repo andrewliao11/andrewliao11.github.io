@@ -74,7 +74,7 @@ nav: false
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block"> <!-- todo -->
-                <a href="" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2404.06510" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
@@ -83,7 +83,7 @@ nav: false
               </span>
               <!-- Code Link. -->
               <span class="link-block"> <!-- todo -->
-                <a href="" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/andrewliao11/vlms_feedback" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
