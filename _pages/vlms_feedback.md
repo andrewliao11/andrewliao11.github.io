@@ -203,7 +203,14 @@ nav: false
   <!-- Citation -->
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>to fill</code></pre>
+    <pre><code>@misc{liao2024feedback,
+title={Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?}, 
+author={Yuan-Hong Liao and Rafid Mahmood and Sanja Fidler and David Acuna},
+year={2024},
+eprint={2404.06510},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
+}</code></pre>
   </div>
 </section>
 

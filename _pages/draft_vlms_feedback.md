@@ -212,6 +212,8 @@ nav: false
         <h3 class="title is-4">&#127912; Qualitative Results</h3>
         <div class="content">
           <img src="/assets/img/vlms_feedback/additional_qualitative_res_gpt4v_1.jpg" margin-left="auto" margin-right="auto"/>
+        </div>
+        <div class="content">
           <p> Here, we show an example using GPT-4V & SoM (Jianwei Yang et al., 2023) as the VLM. GPT-4V is able to identify what objects are in the image, but struggles to identify the mapping between numeric object IDs with objects. With self-generated feedback (from center to left), GPT-4V successfully corrects its own predictions. For more qualitative results, please refere to our paper. </p>
         </div>
       </div>
