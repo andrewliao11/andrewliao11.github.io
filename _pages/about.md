@@ -16,6 +16,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+:airplane: I will be in Vienna for ICLR'24. Drop me an email if you'd like to have a chat or grad a coffee :coffee:
+
 I am a Ph.D. student at the [University of Toronto](https://www.utoronto.ca), supervised by [Prof. Sanja Fidler](http://www.cs.utoronto.ca/~fidler/index.html). 
 I believe that the smarts of our machines are a mirror of our own thoughts, especially when we feed them with carefully curated and labeled datasets and interact with them in meaningful ways. Therefore, my reserach intersts lies in improving dataset labels both in precision and consistency and helping machine to be a better human feedback listener.
 
