@@ -197,7 +197,9 @@ nav: false
         <h2 class="title is-3">Experimental results</h2>
         <div class="content has-text-justified has-text-centered">
           <p>We experimented across 4 transferring scenarios and 3 detector architecures. We adopt 5 baseline apporaches to the label transfer problem to showcase the effectiveness of LGPL. Please see the paper for more details</p>
+          <div style="text-align: center;">
           <img src="/assets/img/label_transfer/results.png" width="80%" margin-left="auto" margin-right="auto"/>
+          </div>
           <p>Here are our findings</p>
           <div style="padding-left: 24px">
           <ol>
