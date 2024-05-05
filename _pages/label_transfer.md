@@ -125,7 +125,7 @@ nav: false
         <source src="static/videos/PR2LAnimation.mp4" type="video/mp4">
       </video> -->
       <div style="text-align: center;">
-        <img src="/assets/img/label_transfer/teaser.png" width="50%" margin-left="auto" margin-right="auto"/>
+        <img src="/assets/img/label_transfer/teaser.png" width="75%" margin-left="auto" margin-right="auto"/>
       </div>
       <h2 class="subtitle has-text-centered">
         Can you find any cyclist/bicycle label errors across the six images?<br>
