@@ -24,10 +24,10 @@ nav: false
   <meta property="og:image:width" content="1082" />
   <meta property="og:image:height" content="639" />
   <meta property="og:url" content="" />
-  <meta property="og:description" content="Project page for Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?" />
+  <meta property="og:description" content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?" />
   <meta name="twitter:title"
     content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?" />
-  <meta name="twitter:description" content="Project page for Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?" />
+  <meta name="twitter:description" content="Can Feedback Enhance Semantic Grounding in Large Vision-Language Models?" />
   <meta name="twitter:image"
     content="" />
 
