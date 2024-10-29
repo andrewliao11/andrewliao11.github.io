@@ -1,7 +1,7 @@
 ---
 layout: none
 title: label_transfer
-permalink: /label-transfer/
+permalink: /label_transfer/
 nav: false
 
 ---
@@ -75,6 +75,7 @@ nav: false
             <span class="author-block"><sup>3</sup>University of Ottawa, </span>
             <span class="author-block"><sup>4</sup>Georgia Institute of Technology</span>
           </div>
+          <div class="column has-text-centered" style="font-size: 2em; color: red; font-weight: bold;">ICLR 2024</div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
