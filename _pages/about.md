@@ -16,9 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-:star: **I'll be on the job market for an industry role starting early 2025. If my research aligns with your needs, please feel free to reach out via email.**
-
-:sunny: I will be in Miami for EMNLP'24. Drop me an email if you'd like to have a chat or grad a coffee :coffee:
+:star: **I am on the job market for an industry role starting mid 2025. If my research aligns with your needs, please feel free to reach out via [email](mailto:andrewliao11@gmail.com).**
 
 I am a final-year Ph.D. student at the [University of Toronto](https://www.utoronto.ca) and Vector Institute. I am fortunate to be supervised by [Prof. Sanja Fidler](http://www.cs.utoronto.ca/~fidler/index.html). 
 Previously, I was an CV/ML scientist intern at NVIDIA Toronto AI lab in 2022 - 2023 and Amazon Astros team in 2024. 

@@ -122,9 +122,6 @@ nav: false
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!--<video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="static/videos/PR2LAnimation.mp4" type="video/mp4">
-      </video> -->
       <div style="text-align: center;">
         <img src="/assets/img/label_transfer/teaser.png" width="75%" margin-left="auto" margin-right="auto"/>
       </div>
