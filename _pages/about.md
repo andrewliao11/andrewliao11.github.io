@@ -27,6 +27,8 @@ I am interested in developing and analyzing large Vision-Language Models. Specif
 - Improving human-annotated labels [[CVPR'21](https://arxiv.org/abs/2104.12690)] [[ICLR'24](https://openreview.net/forum?id=ChHx5ORqF0)]
 - Improving machine-generated labels [[EMNLP'24](https://web3.arxiv.org/abs/2409.09788)] [[arXiv'24](https://arxiv.org/abs/2404.06510v1)]
 
+Check my resume [here](./assets/pdf/yuan-hong_liao_UofT_resume.pdf) (last updated in Jan. 2025)
+
 <details>
 <summary>Previous experiences</summary>
 Prior to my Ph.D., I was a visiting student at Vector Institute and USC in 2018 and 2017, respectively. I was fortunate to start by AI research at National Tsing Hua University, supervised by Prof. Min Sun.
