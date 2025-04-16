@@ -21,11 +21,11 @@ social: true # includes social icons at the bottom of the page
 I am a final-year Ph.D. student at the [University of Toronto](https://www.utoronto.ca) and Vector Institute. I am fortunate to be supervised by [Prof. Sanja Fidler](http://www.cs.utoronto.ca/~fidler/index.html). 
 Previously, I was an CV/ML scientist intern at NVIDIA Toronto AI lab in 2022 - 2023 and Amazon Astros team in 2024. 
 
-I am interested in developing and analyzing large Vision-Language Models. Specifically, I focus on the application of building scalable & efficient data labeling pipeline. Check my papers in
-- Improving human-annotated labels [[CVPR'21](https://arxiv.org/abs/2104.12690)] [[ICLR'24](https://openreview.net/forum?id=ChHx5ORqF0)]
-- Improving machine-generated labels [[EMNLP'24](https://web3.arxiv.org/abs/2409.09788)] [[arXiv'24](https://arxiv.org/abs/2404.06510v1)]
+My research surrounds two essential aspects: visual data labeling and vision-language models:
+- **🖼️ Improving visual labels**: Visual labeling: I develop methods to reduce crowdsourced labeling costs [[CVPR'21](https://arxiv.org/abs/2104.12690)] and fix semantic inconsistencies in real-world datasets [[ICLR'24](https://openreview.net/forum?id=ChHx5ORqF0)].
+- **🧠 Vision-language models**: I enhance vision-language models in spatial reasoning [[EMNLP'24](https://web3.arxiv.org/abs/2409.09788)], enable self-correction during inference [[CVPR'25](https://arxiv.org/abs/2404.06510v1)], and promote system-2 thinking in vision-centric tasks [[arxiv'25]()]
 
-Check my resume [here](./assets/pdf/yuan-hong_liao_UofT_resume.pdf) (last updated in Jan. 2025)
+Check my resume [here](./assets/pdf/yuan-hong_liao_UofT_resume.pdf) (last updated in April 2025)
 
 <details>
 <summary>Previous experiences</summary>
