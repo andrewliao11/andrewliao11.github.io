@@ -78,10 +78,7 @@ nav: false
     }
     
   </style>
-
-  
 </head>
-
 
 
 <section class="hero" >
@@ -148,9 +145,7 @@ nav: false
   </div>
 </section>
 
-
 <!-- Podcast Section -->
-
 <section class="section" style="padding-top: 0rem; padding-bottom: 3rem;">
   <div class="container is-max-desktop">
     <div class="columns is-centered is-mobile">
@@ -172,6 +167,7 @@ nav: false
   </div>
 </section>
 
+<section class="section" id="summary">
 <div class="container is-max-desktop">
     <div class="columns is-centered is-mobile">
       <div class="column is-four-fifths" style="max-width: 70%; background-color: #f5f5f5; padding: 30px 30px 39px;">
@@ -201,10 +197,9 @@ nav: false
       </div>
     </div>
   </div>
-  
-  
+</section>
 
-<section class="section" id="feedback_dynamics">
+<section class="section" id="introduction">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -216,7 +211,7 @@ nav: false
             This work asks: <b>Can we equip VLMs with system-2 reasoning to improve performance on vision-centric tasks?</b> And our answer is Yes! and with only 500 images! 
             </p>
         </div>
-        <div class="table-container">
+        <div class="table-container" align="center">
             <table class="table is-striped is-hoverable">
                 <thead>
                 <tr>
@@ -268,15 +263,91 @@ nav: false
                 </tr>
                 </tbody>
             </table>
+          </div>
+          <div class="content">
+            <div class="content has-text-centered mt-2 mb-4">
+              <details class="disclosure-widget">
+                <summary>For more results, please unfold to see expanded tables</summary>
+                <!-- The detailed results table goes inside the details element -->
+                <div id="detailed-results-container">
+                  <h4 class="subtitle is-5 mt-4">Comparison with other multimodal reasoning datasets.</h4>
+                    <table class="table is-striped is-hoverable">
+                      <thead>
+                      <tr>
+                          <th class="has-background-grey-lighter">Method</th>
+                          <th class="has-background-grey-lighter">Avg</th>
+                          <th class="has-background-grey-lighter">CV-Bench</th>
+                          <th class="has-background-grey-lighter">V* Bench</th>
+                          <th class="has-background-grey-lighter">MMVP</th>
+                          <th class="has-background-grey-lighter">MMStar-V</th>
+                          <th class="has-background-grey-lighter">MME-RW-V</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <th>Qwen2.5-VL-7B-Instruct</th>
+                          <td>58.47</td>
+                          <td>74.74</td>
+                          <td>48.51</td>
+                          <td>73.67</td>
+                          <td>63.73</td>
+                          <td>31.68</td>
+                      </tr>
+                      <tr>
+                          <th>+ CoT</th>
+                          <td>59.18</td>
+                          <td>75.42</td>
+                          <td>55.08</td>
+                          <td>70.60</td>
+                          <td>62.40</td>
+                          <td>32.40</td>
+                      </tr>
+                      <tr>
+                          <th>+ VLAA-thinking <small>(Chen el al., 2025)</small></th>
+                          <td>42.32</td>
+                          <td>68.50</td>
+                          <td>53.53</td>
+                          <td>66.67</td>
+                          <td>0.53</td>
+                          <td>22.38</td>
+                      </tr>
+                      <tr>
+                          <th>+ Virgo <small>(Du el al., 2025)</small></th>
+                          <td>50.87</td>
+                          <td>67.22</td>
+                          <td>44.14</td>
+                          <td>57.67</td>
+                          <td>57.6</td>
+                          <td>27.71</td>
+                      </tr>
+                      <tr>
+                          <th class="has-background-info-light"><strong>+ LongPerceptualThoughts (SFT)</strong></th>
+                          <td class="has-background-info-light"><strong>59.90</strong></td>
+                          <td class="has-background-info-light">76.05</td>
+                          <td class="has-background-info-light">60.53</td>
+                          <td class="has-background-info-light">70.00</td>
+                          <td class="has-background-info-light">60.67</td>
+                          <td class="has-background-info-light">32.25</td>
+                      </tr>
+                      <tr>
+                          <th class="has-background-info-light"><strong>+ LongPerceptualThoughts (SFT + DPO)</strong></th>
+                          <td class="has-background-info-light"><strong>61.87</strong></td>
+                          <td class="has-background-info-light"><strong>76.61</strong></td>
+                          <td class="has-background-info-light"><strong>60.31</strong></td>
+                          <td class="has-background-info-light"><strong>75.00</strong></td>
+                          <td class="has-background-info-light"><strong>64.00</strong></td>
+                          <td class="has-background-info-light"><strong>33.45</strong></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </details>
             </div>
-
+          </div>
       </div>
     </div>
   </div>
-</section>
-
-
-
+</section>  
 
 <section class="section" id="approach">
   <div class="container is-max-desktop">
@@ -296,15 +367,15 @@ nav: false
             </div>
           <p>
             <ul>
-                <li>
-                <b>Stage 1 - Ask  using an LLM</b>: Convert dense image descriptions into multiple-choice questions using an LLM (e.g., GPT-4o-mini)
-                </li>
-                <li>
-                <b>Stage 2 - Think like a VLM</b>: Use a VLM (e.g., Qwen2.5-VL-7B-Instruct) to generate a simple CoT and answer
-                </li>
-                <li>
-                <b>Stage 3 - Think harder like a Reasoning VLM</b>: Prompt a reasoning LLM (e.g., DeepSeek-R1-Distill) with the simple CoT + subtle cue like “Wait,”
-                </li>
+              <li>
+                <b>Stage 1 – Ask using an LLM:</b> We start by converting dense image descriptions into <b>multiple-choice questions</b> using GPT-4o-mini. These questions are designed to be <b>grounded</b>, <b>diverse</b>, and <b>verifiable</b>, ensuring the model has a clear visual task to reason about. 
+              </li>
+              <li>
+                <b>Stage 2 – Think like a VLM:</b> Next, we use a <b>Qwen2.5-VL-7B-Instruct</b> to generate a <b>simple chain-of-thought (CoT)</b>. These are short, direct reasoning steps that are within the VLM’s comfort zone, providing a natural foundation to build deeper thoughts from.
+              </li>
+              <li>
+                <b>Stage 3 – Think harder like a Reasoning VLM:</b> Finally, we hand over the image, question, and simple CoT to a <b>powerful reasoning LLM</b> (e.g., DeepSeek-R1-Distill). With a gentle nudge, like inserting "Wait," before the reasoning begins, we prompt the model to <b>reflect, verify, and revise</b> its thinking. The result? A rich, multi-step <b>long CoT</b> that mimics system-2 behavior: setting subgoals, checking assumptions, and even backtracking if needed.
+              </li>
             </ul>
           </p>
         </div>
@@ -313,6 +384,65 @@ nav: false
   </div>
 </section>
 
+<section class="section" id="analysis">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Analysis: More Thoughtful Chains, Not Just Longer Ones</h2>
+        <!-- Side-by-side figures -->
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <figure>
+              <img src="/assets/img/long_perceptual_thoughts/seq_len_change.pdf" alt="Length of CoTs" style="max-width: 100%;">
+              <figcaption style="font-size: 0.9rem;">Token-length distribution of CoTs.</figcaption>
+            </figure>
+          </div>
+          <div class="column has-text-centered">
+            <figure>
+              <img src="/assets/img/long_perceptual_thoughts/cognitive_analysis.pdf" alt="Cognitive Behaviors in CoTs" style="max-width: 100%;">
+              <figcaption style="font-size: 0.9rem;">Frequency of cognitive behaviors in CoTs.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- Bullet points describing each figure -->
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <b>CoT Lengths (left figure):</b> CoTs in LongPerceptualThoughts are longer on average as compared to CoT produced by popular VLMs.
+            </li>
+            <li>
+              <b>Cognitive Behaviors (right figure):</b> CoTs in LongPerceptualThoughts also demonstrate diverse behaviors in structure. Unlike flat responses from baseline VLMs, our CoTs include intermediate steps and self-reflection. More specifically, our CoTs in LongPerceptualThoughts demonstrate significantly higher rates of subgoal setting, backtracking, and verification compared to VLMs like Qwen2.5-VL CoTs. 
+              The CoTs in LongPerceptualThoughts are more similar to those generated by Gemini Flash Thinking, these structured behaviors are key indicators of system-2 reasoning, and are rarely observed in existing vision-language CoT datasets.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="takeaways">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Takeaways</h2>
+        <div class="content has-text-justified">
+          <ol>
+            <li>
+              <b>🧠 Synthesizing long, rich reasoning data powers perception.</b><br>
+              With just 500 images, we generate 30K chain-of-thought traces that teach vision-language models to reflect, verify, and revise. These cognitive patterns—rare in standard datasets—boost visual reasoning across benchmarks.
+            </li>
+            <li>
+              <b>🥷 Just SFT. Nothing fancy.</b><br>
+              No new architectures. No reinforcement learning from scratch. Just supervised fine-tuning on LongPerceptualThoughts leads to strong gains on vision-centric tasks. More surprisingly, it even improves performance on a text-only reasoning benchmark (MMLU-Pro), showing cross-modal generalization.
+            </li>
+          </ol>
+          <p><i>Richer thinking leads to better seeing—without needing more data or bigger models.</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <!-- Citation -->
