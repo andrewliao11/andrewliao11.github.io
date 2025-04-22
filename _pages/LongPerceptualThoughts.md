@@ -60,12 +60,32 @@ nav: false
     body, .title, .author-block {
       font-family: 'Crimson Pro', serif !important;
     }
+    /* Podcast Section Styling */
+    .podcast-section {
+      background-color: #f0f8ff;
+      border-radius: 8px;
+      border-left: 5px solid #3273dc;
+    }
+    
+    .podcast-title {
+      color: #3273dc;
+    }
+    
+    .podcast-player {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 800px;
+    }
+    
   </style>
+
+  
 </head>
 
 
-<section class="hero">
-  <div class="hero-body">
+
+<section class="hero" >
+  <div class="hero-body" style="padding-top: 2rem; padding-bottom: 2rem;">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -120,15 +140,6 @@ nav: false
                   <span>Dataset</span>
                 </a>
               </span>
-              <!-- Video Link. 
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
             </div>
           </div>
         </div>
@@ -138,8 +149,30 @@ nav: false
 </section>
 
 
+<!-- Podcast Section -->
+
+<section class="section" style="padding-top: 0rem; padding-bottom: 3rem;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered is-mobile">
+      <div class="column is-four-fifths podcast-section" style="max-width: 70%; padding: 10px 30px 15px;">
+        <h2 class="title is-4 podcast-title">
+          <i class="fas fa-podcast"></i> Notebook LM Summary
+        </h2>
+        <div class="content">
+          <p>Commuting? Listen to our paper's key insights in just minutes!</p>
+          <div class="podcast-player">
+            <audio controls style="width: 100%;">
+              <source src="/assets/audio/long_perceptual_thoughts/from_notebook_lm.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered is-mobile">
       <div class="column is-four-fifths" style="max-width: 70%; background-color: #f5f5f5; padding: 30px 30px 39px;">
         <div class="title is-4" style="margin-bottom: 0.5em">🔍 Project summary:</div>
