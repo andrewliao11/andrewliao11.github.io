@@ -1,7 +1,7 @@
 ---
 layout: none
 title: LongPerceptualThoughts Distilling System-2 Reasoning for System-1 Perception
-permalink: /test/ #/LongPerceptualThoughts/
+permalink: /LongPerceptualThoughts/
 nav: false
 
 ---
