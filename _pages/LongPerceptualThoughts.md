@@ -121,7 +121,7 @@ nav: false
               </span>
               <!-- Code Link. -->
               <span class="link-block"> 
-                <a href="LINK" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/andrewliao11/LongPerceptualThoughts" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
