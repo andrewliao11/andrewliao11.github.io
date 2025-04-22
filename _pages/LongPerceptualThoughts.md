@@ -434,7 +434,7 @@ nav: false
             </li>
             <li>
               <b>🥷 Just SFT. Nothing fancy.</b><br>
-              No new architectures. No reinforcement learning from scratch. Just supervised fine-tuning on LongPerceptualThoughts leads to strong gains on vision-centric tasks. More surprisingly, it even improves performance on a text-only reasoning benchmark (MMLU-Pro), showing cross-modal generalization.
+              No new architectures. No reinforcement learning from scratch. Just supervised fine-tuning on LongPerceptualThoughts leads to strong gains on vision-centric tasks. More surprisingly, it even improves performance on a text-only reasoning benchmark (MMLU-Pro). See more details in our paper!
             </li>
           </ol>
           <p><i>Richer thinking leads to better seeing—without needing more data or bigger models.</i></p>
