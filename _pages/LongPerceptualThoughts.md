@@ -271,6 +271,7 @@ nav: false
                 <!-- The detailed results table goes inside the details element -->
                 <div id="detailed-results-container">
                   <h4 class="subtitle is-5 mt-4">Comparison with other multimodal reasoning datasets.</h4>
+                    <div class="table-container" align="center">
                     <table class="table is-striped is-hoverable">
                       <thead>
                       <tr>
@@ -340,6 +341,7 @@ nav: false
                       </tr>
                       </tbody>
                   </table>
+                  </div>
                 </div>
               </details>
             </div>
