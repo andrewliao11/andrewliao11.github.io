@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: This is Andrew!
 permalink: /
 subtitle: <a href='#'>University of Toronto, Vector Institute</a>
 
@@ -23,7 +23,7 @@ Previously, I was an CV/ML scientist intern at NVIDIA Toronto AI lab in 2022 - 2
 
 My research surrounds two essential aspects: visual data labeling and vision-language models:
 - **🖼️ Improving visual labels**: Visual labeling: I develop methods to reduce crowdsourced labeling costs [[CVPR'21](https://arxiv.org/abs/2104.12690)] and fix semantic inconsistencies in real-world datasets [[ICLR'24](https://openreview.net/forum?id=ChHx5ORqF0)].
-- **🧠 Vision-language models**: I enhance vision-language models in spatial reasoning [[EMNLP'24](https://web3.arxiv.org/abs/2409.09788)], enable self-correction during inference [[CVPR'25](https://arxiv.org/abs/2404.06510v1)], and promote system-2 thinking in vision-centric tasks [[arxiv'25]()]
+- **🧠 Vision-language models**: I enhance vision-language models in spatial reasoning [[EMNLP'24](https://arxiv.org/abs/2409.09788)], enable self-correction during inference [[CVPR'25](https://arxiv.org/abs/2404.06510v1)], and promote system-2 thinking in vision-centric tasks [[arxiv'25](https://arxiv.org/abs/2504.15362)]
 
 Check my resume [here](./assets/pdf/yuan-hong_liao_UofT_resume.pdf) (last updated in April 2025)
 
