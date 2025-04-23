@@ -1,14 +1,19 @@
 ---
 ---
-@misc{insubmission,
-  title={LongPerceptualThoughts: Distilling System-2 Reasoning for System-1 Perception}, 
-  author={Yuan-Hong Liao and Sven Elflein and Liu He and Laura Leal-Taixé and Yejin Choi and Sanja Fidler and David Acuna},
-      year={2025},
-      eprint={1703.06748},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      selected={true},     
-      preview={LongPerceptualThoughts.pdf}
+@misc{liao2025longperceptualthoughtsdistillingsystem2reasoning,
+title={LongPerceptualThoughts: Distilling System-2 Reasoning for System-1 Perception}, 
+author={Yuan-Hong Liao and Sven Elflein and Liu He and Laura Leal-Taixé and Yejin Choi and Sanja Fidler and David Acuna},
+year={2025},
+abstract={Recent reasoning models through test-time scaling have demonstrated that long chain-of-thoughts can unlock substantial performance boosts in hard reasoning tasks such as math and code. However, the benefit of such long thoughts for system-2 reasoning is relatively less explored in other domains such as perceptual tasks where shallower, system-1 reasoning seems sufficient. In this paper, we introduce LongPerceptualThoughts, a new synthetic dataset with 30K long-thought traces for perceptual tasks. The key challenges in synthesizing elaborate reasoning thoughts for perceptual tasks are that off-the-shelf models are not yet equipped with such thinking behavior and that it is not straightforward to build a reliable process verifier for perceptual tasks. Thus, we propose a novel three-stage data synthesis framework that first synthesizes verifiable multiple-choice questions from dense image descriptions, then extracts simple CoTs from VLMs for those verifiable problems, and finally expands those simple thoughts to elaborate long thoughts via frontier reasoning models. In controlled experiments with a strong instruction-tuned 7B model, we demonstrate notable improvements over existing visual reasoning data-generation methods. Our model, trained on the generated dataset, achieves an average +3.4 points improvement over 5 vision-centric benchmarks, including +11.8 points on V* Bench. Notably, despite being tuned for vision tasks, it also improves performance on the text reasoning benchmark, MMLU-Pro, by +2 points.},
+website={https://andrewliao11.github.io/LongPerceptualThoughts/}, 
+pdf={https://arxiv.org/pdf/2504.15362},
+code={https://github.com/andrewliao11/LongPerceptualThoughts},
+eprint={2504.15362},
+archivePrefix={arXiv},
+primaryClass={cs.CV},
+url={https://arxiv.org/abs/2504.15362}, 
+selected={true},     
+preview={LongPerceptualThoughts.pdf}
 }
 @InProceedings{liao2024feedback,
     author    = {Yuan-Hong Liao and Rafid Mahmood and Sanja Fidler and David Acuna},
