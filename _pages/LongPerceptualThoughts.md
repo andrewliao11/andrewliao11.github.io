@@ -112,7 +112,7 @@ nav: false
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block"> 
-                <a href="LINK" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2504.15362" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
@@ -450,8 +450,15 @@ nav: false
   <!-- Citation -->
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
-</code></pre>
+    <pre><code>@misc{liao2025longperceptualthoughtsdistillingsystem2reasoning,
+      title={LongPerceptualThoughts: Distilling System-2 Reasoning for System-1 Perception}, 
+      author={Yuan-Hong Liao and Sven Elflein and Liu He and Laura Leal-Taixé and Yejin Choi and Sanja Fidler and David Acuna},
+      year={2025},
+      eprint={2504.15362},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.15362}, 
+}</code></pre>
   </div>
 </section>
 
